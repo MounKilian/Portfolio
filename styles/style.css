@@ -407,6 +407,15 @@ img.portrait {
     margin-bottom: 0;
 }
 
+.section-allprojets {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    padding: 4rem 0;
+    margin-bottom: 0;
+}
+
 .section-projets-containers {
     border-bottom: #707070 0.5px solid; 
 }
@@ -719,4 +728,165 @@ select:focus {
     justify-content: flex-end; 
     align-items: center;
     gap: 1rem; 
+}
+
+.buttonRetour {
+    align-self: left;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #EBEBEB;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.retour {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 8rem;
+    margin-left: 52px;
+    margin-bottom: 0px;
+}
+
+.h3-card-game  {
+    font-size: 40px;
+    font-weight: black;
+    display : flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.download-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.download-icons img {
+    width: 55px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.download-icons img:hover {
+    transform: scale(1.1);
+}
+
+.logoGame {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.headerGame {
+    border-bottom: #707070 0.5px solid;
+}
+
+.skills-games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 90px;
+    margin-left: 150px;
+}
+
+.skill-tag-games {
+    border: 2px solid #277EFF;
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #277EFF;
+}
+
+.game-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 4rem 0;
+    margin-bottom: 0;
+}
+
+.game {
+    background-color: #151515;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: #707070 0.5px solid;
+}
+
+.game-text {
+    text-align: left;
+}
+
+.h2-game {
+    font-size: 30px; 
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    display: flex; 
+    align-items: center; 
+    gap: 1rem; 
+}
+
+.h2-game::after {
+    content: ''; 
+    flex-grow: 1; 
+    height: 1px; 
+    background-color: #707070; 
+}
+
+.p-game {
+    font-size: 20px;
+    margin-top: 0rem;
+    line-height: 1.25;
+}
+
+.p-game-ss {
+    font-size: 20px;
+    margin-top: 0rem;
+    line-height: 1.25;
+    margin-bottom: 6rem;
+}
+
+.image-game {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contributions {
+    margin-top: 2rem;
+    color: #EBEBEB;
+}
+
+.contributions-list {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.contributions-list li {
+    position: relative;
+    padding-left: 2rem; 
+    margin-bottom: 1rem;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contributions-list li::before {
+    content: "✔"; 
+    position: absolute;
+    left: 0;
+    color: #277EFF;
+    font-size: 18px;
+    line-height: 1.6;
 }
