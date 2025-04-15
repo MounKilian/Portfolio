@@ -9,18 +9,17 @@
     <div class="header">
         <header>
             <div class="row">
-                <a href="#" class="h1-row" aria-label="Logo de Kilian Moun">
-                    <h1>KILIAN</h1>
-                    <h1 class="blue">MOUN</h1>
+                <a tabindex="0" href="#" class="h1-row" aria-label="Accueil Portfolio">
+                    <h1>KILIAN <span class="blue">MOUN</span></h1>
                 </a>
                 <div class="nav-right"> 
                     <div class="nav-row">
                         <div class="categorie">
-                            <a href="#about">À propos</a>
-                            <a href="#projets">Projets</a>
-                            <a href="#contact">Contact</a>
+                            <a tabindex="0" href="#about">À propos</a>
+                            <a tabindex="0" href="#projets">Projets</a>
+                            <a tabindex="0" href="#contact">Contact</a>
                         </div>
-                        <a class="buttonCV" href="docs/CVKilianMoun.pdf" download aria-label="Télécharger le CV">CV</a>    
+                        <a tabindex="0" id="downloadCV" class="buttonCV" href="docs/CVKilianMoun.pdf" download aria-label="Télécharger le CV">CV</a>
                     </div>
                 </div>
             </div>
@@ -32,14 +31,13 @@
             <img src="images/imageProf.PNG" alt="illustration de Kilian Moun en train de coder" class="portrait">
             <div class="text-presentation">
                 <div class="h1-row-presentation">
-                    <h1>KILIAN</h1>
-                    <h1 class="blue">MOUN</h1>
+                    <h1>KILIAN <span class="blue">MOUN</span></h1>
                 </div>
                 <div class="presentation-text-details">
                     <h2 class="h2-presentation">Game Programmer</h2>
                     <p class="p-presentation">Je suis passionné par les jeux vidéo depuis mon plus jeune âge. Cette passion m’a naturellement conduit à m’intéresser au développement de jeux, et aujourd’hui, je me spécialise dans le Game Programming.</p>
                 </div>
-                <a class="buttonProjets">Découvrir mes projets</a>
+                <a tabindex="0" class="buttonProjets">Découvrir mes projets</a>
             </div>
         </div>
     </div>
@@ -131,7 +129,7 @@
                             <span class="skill-tag">Game Jam</span>
                             <span class="skill-tag">Escape Game</span>
                         </div>
-                        <a href="#" class="découvrirProjets">Découvrir Alchemist Madness &gt;&gt;&gt;</a>
+                        <a tabindex="0" href="#" class="découvrirProjets">Découvrir Alchemist Madness &gt;&gt;&gt;</a>
                     </div>  
                 </div>
 
@@ -151,7 +149,7 @@
                             <span class="skill-tag">Blueprint</span>
                             <span class="skill-tag">Action/Aventure</span>
                         </div>
-                        <a href="#" class="découvrirProjets">Découvrir Nokturial &gt;&gt;&gt;</a>
+                        <a tabindex="0" href="#" class="découvrirProjets">Découvrir Nokturial &gt;&gt;&gt;</a>
                     </div>
                 </div>
 
@@ -169,12 +167,12 @@
                             <span class="skill-tag">Blueprint</span>
                             <span class="skill-tag">Action/Aventure</span>
                         </div>
-                        <a href="#" class="découvrirProjets">Découvrir Era &gt;&gt;&gt;</a>
+                        <a tabindex="0" href="#" class="découvrirProjets">Découvrir Era &gt;&gt;&gt;</a>
                     </div>
                 </div>
 
                 <div class="center">
-                    <a class="buttonProjetsOthers">Découvrir les autres projets</a>
+                    <a tabindex="0" class="buttonProjetsOthers">Découvrir les autres projets</a>
                 </div>
             </div>
         </div> 
@@ -191,16 +189,16 @@
                 </p>
             
                 <div class="contact-icons">
-                    <a href="kilianmoun@gmail.com" aria-label="Envoyer un mail">
+                    <a tabindex="0" href="mailto:kilianmoun@gmail.com" aria-label="Envoyer un mail">
                         <img src="images/mail.png" alt="Email">
                     </a>
-                    <a href="https://www.linkedin.com/in/kilian-moun-37090b28b/" aria-label="Voir le profil LinkedIn">
+                    <a tabindex="0" href="https://www.linkedin.com/in/kilian-moun-37090b28b/" target="_blank" aria-label="LinkedIn">
                         <img src="images/linkedin.png" alt="LinkedIn">
                     </a>
-                    <a href="https://github.com/MounKilian" aria-label="Voir le profil Github">
+                    <a tabindex="0" href="https://github.com/MounKilian" aria-label="Github">
                         <img src="images/github.png" alt="GitHub">
                     </a>
-                    <a href="https://blozyfars.itch.io" aria-label="Voir le profil Itchio">
+                    <a tabindex="0" href="https://blozyfars.itch.io" aria-label="Itchio">
                         <img src="images/itchio.png" alt="Itch.io">
                     </a>
                 </div>
@@ -209,34 +207,47 @@
                     <div class="input-group double">
                         <div>
                             <label for="prenom">Prénom</label>
-                            <input id="prenom" name="prenom" type="text" placeholder="Votre prénom ..." required>
+                            <input tabindex="0" id="prenom" name="prenom" type="text" required>
                         </div>
                         <div>
                             <label for="nom">Nom</label>
-                            <input id="nom" name="nom" type="text" placeholder="Votre nom..." required>
+                            <input tabindex="0" id="nom" name="nom" type="text" required>
                         </div>
                     </div>
                 
                     <div class="input-group">
                         <label for="email">Email</label>
-                        <input id="email" name="email" type="email" placeholder="Email..." required>
+                        <input tabindex="0" id="email" name="email" type="email" required>
                     </div>
                 
                     <div class="input-group">
                         <fieldset>
-                            <legend>Sujet</legend>
-                            <div class="radio-group">
-                                <label><input type="radio" name="sujet" value="recrutement" required> Recrutement</label>
-                                <label><input type="radio" name="sujet" value="projets"> Projets</label>
-                                <label><input type="radio" name="sujet" value="discussions"> Discussions</label>
-                                <label><input type="radio" name="sujet" value="autres"> Autres</label>
-                            </div>
+                          <legend>Sujet</legend>
+                          <div class="radio-group">
+                            <label>
+                              <input tabindex="0" type="radio" name="sujet" value="recrutement" required>
+                              Recrutement
+                            </label>
+                            <label>
+                              <input tabindex="0" type="radio" name="sujet" value="projets">
+                              Projets
+                            </label>
+                            <label>
+                              <input tabindex="0" type="radio" name="sujet" value="discussions">
+                              Discussions
+                            </label>
+                            <label>
+                              <input tabindex="0" type="radio" name="sujet" value="autres">
+                              Autres
+                            </label>
+                          </div>
                         </fieldset>
                     </div>
+                      
                 
                     <div class="input-group">
                         <label for="civilite">Civilité</label>
-                        <select id="civilite" name="civilite" required>
+                        <select id="civilite" name="civilite" tabindex="0" required>
                             <option value="homme">Homme</option>
                             <option value="femme">Femme</option>
                             <option value="autre">Autre</option>
@@ -245,10 +256,10 @@
                 
                     <div class="input-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Votre message ..." required></textarea>
+                        <textarea tabindex="0" id="message" name="message" required></textarea>
                     </div>
                 
-                    <button type="submit" class="submit-button">Submit</button>
+                    <button tabindex="0" type="submit" class="submit-button">Envoyer</button>
                 </form>                                
                 
             </div>
@@ -264,4 +275,59 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const titleBase = "Portfolio Kilian Moun";
+
+    const links = document.querySelectorAll('a[href^="#"]');
+
+    const form = document.querySelector('.contact-form');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault(); 
+        const messageContainer = document.createElement('div');
+        messageContainer.textContent = '✅ Merci pour votre message, je vous répondrai rapidement !';
+        messageContainer.style.marginTop = '1rem';
+        messageContainer.style.padding = '1rem';
+        messageContainer.style.borderRadius = '8px';
+        messageContainer.style.backgroundColor = '#d4edda';
+        messageContainer.style.color = '#155724';
+        messageContainer.style.fontWeight = 'bold';
+
+        form.parentNode.appendChild(messageContainer);
+
+        form.reset(); 
+    });
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            const section = link.getAttribute('href');
+
+            switch (section) {
+                case '#about':
+                    document.title = `À propos - ${titleBase}`;
+                    break;
+                case '#projets':
+                    document.title = `Projets - ${titleBase}`;
+                    break;
+                case '#contact':
+                    document.title = `Contact - ${titleBase}`;
+                    break;
+                default:
+                    document.title = titleBase;
+            }
+        });
+    });
+
+    document.getElementById('downloadCV').addEventListener('click', function(event) {
+        event.preventDefault(); 
+
+        const confirmDownload = confirm("Le CV va être téléchargé au format PDF. 802ko. Voulez-vous continuer ?");
+        
+        if (confirmDownload) {
+            window.location.href = this.href;
+        }
+    });
+</script>
+
 </html>
