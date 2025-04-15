@@ -203,7 +203,7 @@
                     </a>
                 </div>
             
-                <form class="contact-form" aria-label="Formulaire de contact">
+                <form action="https://formspree.io/f/xblgbzyj" method="POST" class="contact-form" aria-label="Formulaire de contact">
                     <div class="input-group double">
                         <div>
                             <label for="prenom">Prénom</label>
@@ -260,7 +260,7 @@
                     </div>
                 
                     <button tabindex="0" type="submit" class="submit-button">Envoyer</button>
-                </form>                                
+                </form>   
                 
             </div>
         </div>
@@ -280,24 +280,6 @@
     const titleBase = "Portfolio Kilian Moun";
 
     const links = document.querySelectorAll('a[href^="#"]');
-
-    const form = document.querySelector('.contact-form');
-
-    form.addEventListener('submit', function (e) {
-        e.preventDefault(); 
-        const messageContainer = document.createElement('div');
-        messageContainer.textContent = '✅ Merci pour votre message, je vous répondrai rapidement !';
-        messageContainer.style.marginTop = '1rem';
-        messageContainer.style.padding = '1rem';
-        messageContainer.style.borderRadius = '8px';
-        messageContainer.style.backgroundColor = '#d4edda';
-        messageContainer.style.color = '#155724';
-        messageContainer.style.fontWeight = 'bold';
-
-        form.parentNode.appendChild(messageContainer);
-
-        form.reset(); 
-    });
 
     links.forEach(link => {
         link.addEventListener('click', () => {
